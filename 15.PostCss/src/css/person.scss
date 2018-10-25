@@ -1,0 +1,8 @@
+$borderWith: 2px + 3px;
+$padding: $borderWith * 2;
+
+.Persons{
+    border: $borderWith dashed black;
+    padding: $borderWith;
+    background-color: gray !important;
+}
