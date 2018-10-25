@@ -1,0 +1,61 @@
+{
+  "name": "curso-webpack",
+  "version": "1.0.0",
+  "description": "Proyecto de curso para aprender WebPack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack index.js --output dev/bundle.js --mode development",
+    "build-dst": "webpack index.js --mode production",
+    "build:local": "webpack",
+    "build:external": "webpack --config ./01.External/webpack.config.js",
+    "build:css": "webpack --config ./02.Css-style-loader/webpack.config.js",
+    "build:plugin": "webpack --config ./03.Plugin-extract-text/webpack.config.js",
+    "build:multiple-entry-points": "webpack --config ./04.Multiple-entry-points/webpack.config.js",
+    "build:dev-server": "webpack-dev-server --config ./05.Webpack-dev-server/webpack.config.js",
+    "build:babel": "webpack --config ./06.Babel-loader/webpack.config.js",
+    "build:fonts": "webpack --config ./08.URL-loader-fonts/webpack.config.js",
+    "build:video": "webpack --config ./09.file-loader-video/webpack.config.js",
+    "build:json": "webpack --config ./10.Json-loader/webpack.config.js",
+    "build:react": "webpack --config ./11.React/webpack.config.js",
+    "build:sass": "webpack --config ./12.Sass/webpack.config.js",
+    "build:stylus": "webpack --config ./13.Stylus/webpack.config.js",
+    "build:less": "webpack --config ./14.Less/webpack.config.js",
+    "build:post-css": "webpack --config ./15.PostCss/webpack.config.js"
+  },
+  "keywords": [
+    "WebPack"
+  ],
+  "author": "Rubio Haro Rodrigo R.",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "json-loader": "^0.5.7",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "postcss": "^7.0.5",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.23.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "jshint": "^2.9.6",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "url-loader": "^1.1.2"
+  }
+}
