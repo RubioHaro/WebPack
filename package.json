@@ -22,7 +22,8 @@
     "build:stylus": "webpack --config ./13.Stylus/webpack.config.js",
     "build:less": "webpack --config ./14.Less/webpack.config.js",
     "build:post-css": "webpack --config ./15.PostCss/webpack.config.js",
-    "build:prevent-duplication": "webpack --config ./16.Prevent-duplications/webpack.config.js"
+    "build:prevent-duplication": "webpack --config ./16.Prevent-duplications/webpack.config.js",
+    "build:vendor": "webpack --config ./17.Vendor/webpack.config.js"
   },
   "keywords": [
     "WebPack"
